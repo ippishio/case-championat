@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&display=swap');
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
+    <link rel="alternate" href="manifest.json"/>
+    <script>
+        // Check that service workers are supported
+        if ("serviceWorker" in navigator) {
+          // Use the window load event to keep the page load performant
+        
+          window.addEventListener("load", () => {
+            navigator.serviceWorker.register("./sw.js");
+          });
+        }
+        </script>
+</head>
+
+<body>
+
+    <div id="screen-home" class="page-div">
+        <h1>ГдеТолстый</h1>
+    </div>
+    <div id="screen-search" class="page-div">
+        <h1>Поиск</h1>
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <h1 class="recs-header">План питания 1</h1>
+                    <div class="recs">
+                        <p class="recs-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                            anim id est laborum."</p>
+                    </div>
+                    <button class="recs-button">Добавить</button>
+                </div>
+                <div class="swiper-slide">
+                    <h1 class="recs-header">План питания 2</h1>
+                    <div class="recs">
+                        <p class="recs-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                            anim id est laborum."</p>
+                    </div>
+                    <button class="recs-button">Добавить</button>
+                </div>
+                <div class="swiper-slide">
+                    <h1 class="recs-header">План питания 3</h1>
+                    <div class="recs">
+                        <p class="recs-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                            anim id est laborum."</p>
+                    </div>
+                    <button class="recs-button">Добавить</button>
+                </div>
+                ...
+            </div>
+        </div>
+    </div>
+    <div id="screen-tinder" class="page-div">
+        <h1>Тиндер</h1>
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <h1 class="recs-header">Денчик ШПак</h1>
+                    <div class="tinder-recs recs">
+                        <div class="tinder-info">
+                            <img class="tinder-img" src="images/person1.jpeg">
+                            <div>
+                                <h3>Ищу: похудение</h3>
+                                <h3>Возраст: 13 лет</h3>
+                                <h3>Пол: мужской</h3>
+                            </div>
+                        </div>
+                        <p class="recs-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                            anim id est laborum."</p>
+                    </div>
+                    <button class="recs-button" onclick="location.href='https://t.me/dsshpak'">Написать</button>
+                </div>
+                <div class="swiper-slide">
+                    <h1 class="recs-header">Пенчик Шменчик</h1>
+                    <div class="tinder-recs recs">
+                        <div class="tinder-info">
+                            <img class="tinder-img" src="images/person2.jpeg">
+                            <div>
+                                <h3>Ищу: похудение</h3>
+                                <h3>Возраст: 43 лет</h3>
+                                <h3>Пол: мужской</h3>
+                            </div>
+                        </div>
+                        <p class="recs-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                            anim id est laborum."</p>
+                    </div>
+                    <button class="recs-button" onclick="location.href='https://t.me/dsshpak'">Написать</button>
+                </div>
+                <div class="swiper-slide">
+                    <h1 class="recs-header">Денчиха Шпаковна</h1>
+                    <div class="tinder-recs recs">
+                        <div class="tinder-info">
+                            <img class="tinder-img" src="images/person3.jpeg">
+                            <div>
+                                <h3>Ищу: похудение</h3>
+                                <h3>Возраст: 30 лет</h3>
+                                <h3>Пол: женский</h3>
+                            </div>
+                        </div>
+                        <p class="recs-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                            anim id est laborum."</p>
+                    </div>
+                    <button class="recs-button" onclick="location.href='https://t.me/dsshpak'">Написать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="screen-profile" class="page-div">
+        <h1>Профиль</h1>
+        <img class="profile-photo" src="images/shpak.jpg">
+        <h2 class ="profile-name">Денис Шпак</h2>
+        <div class ="profile-info">
+            <p>Цели: похудеть на 10кг</p>
+            <p>Мой план трени: тык</p>
+            <p>Мой план питания: тыгыдык</p>
+            <p>Моя активность: 0</p>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <button id="home" class="navbar-button"><img src="images/home.png" class="button-img" border="0"></button>
+        <button id="search" class="navbar-button"><img src="images/search.png" class="button-img" border="0"></button>
+        <button id="tinder" class="navbar-button"><img src="images/people.png" class="button-img" border="0"></button>
+        <button id="profile" class="navbar-button"><img src="images/profile.png" class="button-img" border="0"></button>
+
+    </div>
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
