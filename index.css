@@ -34,11 +34,11 @@ button {
     border-color: #37ab4c;
     border-style: solid;
     width: 80%;
-    margin: 20px auto;
+    margin: 5% auto;
 }
 .profile-info {
     margin-left: 5%;
-    font-size: 30px;
+    font-size: 200%;
 }
 .recs {
 
@@ -48,7 +48,7 @@ button {
     border-color: black;
     margin-left: 5%;
     margin-right: 5%;
-    margin-bottom: 100px;
+    margin-bottom: 20%;
 }
 .recs-header {
     margin-bottom: 0;
@@ -70,11 +70,12 @@ button {
 .recs-text {
     margin-left: 5%;
     margin-right: 5%;
+    font-size: 100%;
 }
 .recs-button {
     margin:0 auto;
     display:block;
-    font-size: 50px;
+    font-size: 300%;
     width: 70%;
     background-color: #f5c856;
     border-color: black;
@@ -89,8 +90,8 @@ button {
     visibility: hidden;
 }
 .button-img {
-    width: 40px;
-    height: 40px;
+    width: 50%;
+    height: 50%;
     margin-top: 10%;
   }
 .navbar {
@@ -100,14 +101,15 @@ button {
   right: 0px;
   bottom: 0px;
   position: absolute;
+  height: 10%;
 }
 .navbar-button {
     border-color: #37ab4c;
     border-style: solid;
     display: inline-block;
   width: calc(100% / 4);
-  height: 60px;
-  line-height: 60px;
+  /* height: 30%;
+  line-height: 60px; */
   background: white;
   margin: 0 0px;
   text-align: center;
