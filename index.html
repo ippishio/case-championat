@@ -2,31 +2,148 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Nunito&display=swap');
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
-    <link rel="manifest" href="case-championat.webmanifest"/>
+    <link rel="manifest" href="case-championat.webmanifest" />
     <script>
         // Check that service workers are supported
         if ("serviceWorker" in navigator) {
-          // Use the window load event to keep the page load performant
-        
-          window.addEventListener("load", () => {
-            navigator.serviceWorker.register("./sw.js");
-          });
+            // Use the window load event to keep the page load performant
+
+            window.addEventListener("load", () => {
+                navigator.serviceWorker.register("./sw.js");
+            });
         }
-        </script>
+    </script>
 </head>
 
 <body>
-
     <div id="screen-home" class="page-div">
-        <h1 class="page-header" >ГдеТолстый</h1>
+        <h1 class="page-header">FitMatch</h1>
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="tinder-recs recs">
+
+                        <div class="tinder-info">
+                            <img class="tinder-img" src="images/person1.jpeg">
+                            <div>
+                                <h3 class="tinder-info-name">Иван Спортов</h3>
+                                <h3 class="tinder-info-age">23 года</h3>
+                            </div>
+                        </div>
+                        <p class="recs-text">Всем привет! Ищу партнера для совместного похода в зал с в 19:00 по
+                            вторникам и субботам. Готов поддерживать и мотивировать, если то же буду получать взамен)
+                            Всем успехов в саморазвитии!</p>
+                        <button class="tinder-button"><img class="tinder-button-img" src="images/plus.png"></button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="tinder-recs recs">
+                        <div class="tinder-info">
+                            <img class="tinder-img" src="images/person2.jpeg">
+                            <div>
+                                <h3 class="tinder-info-name">Марина Приколова</h3>
+                                <h3 class="tinder-info-age">24 года</h3>
+                            </div>
+                        </div>
+                        <p class="recs-text">Всем привет! Ищу партнера для совместного похода в зал с в 19:00 по
+                            вторникам и субботам. Готов поддерживать и мотивировать, если то же буду получать взамен)
+                            Всем успехов в саморазвитии!</p>
+                        <button class="tinder-button"><img class="tinder-button-img" src="images/plus.png"></button>
+                    </div>
+
+
+                </div>
+                <div class="swiper-slide">
+                    <div class="tinder-recs recs">
+                        <div class="tinder-info">
+                            <img class="tinder-img" src="images/person3.jpeg">
+                            <div>
+                                <h3 class="tinder-info-name">Олег Крутой</h3>
+                                <h3 class="tinder-info-age">40 лет</h3>
+                            </div>
+                        </div>
+                        <p class="recs-text">Привет! Предоставляю услуги персонального тренера. О себе: КМС по
+                            многоборью, многократный чемпион соревнований по пауэрлифтингу. Стоимость
+                            занятий--1000руб/тренировка</p>
+                        <button class="tinder-button"><img class="tinder-button-img" src="images/plus.png"></button>
+                    </div>
+
+                </div>
+                <div class="swiper-slide">
+                    <div class="tinder-recs recs">
+                        <div class="tinder-info">
+                            <img class="tinder-img" src="images/person4.jpg">
+                            <div>
+                                <h3 class="tinder-info-name">Екатерина Жигалова</h3>
+                                <h3 class="tinder-info-age">21 год</h3>
+                            </div>
+                        </div>
+                        <p class="recs-text">Всем привет! Ищу партнера для совместного похода в зал с в 19:00 по
+                            вторникам и субботам. Готов поддерживать и мотивировать, если то же буду получать взамен)
+                            Всем успехов в саморазвитии!</p>
+                        <button class="tinder-button"><img class="tinder-button-img" src="images/plus.png"></button>
+                    </div>
+
+                </div>
+                <div class="swiper-slide">
+                    <div class="tinder-recs recs">
+                        <div class="tinder-info">
+                            <img class="tinder-img" src="images/person5.jpg">
+                            <div>
+                                <h3 class="tinder-info-name">Забияка</h3>
+                                <h3 class="tinder-info-age">19 лет</h3>
+                            </div>
+                        </div>
+                        <p class="recs-text">Привет! Предоставляю услуги персонального тренера. О себе: КМС по
+                            многоборью, многократный чемпион соревнований по пауэрлифтингу. Стоимость
+                            занятий--1000руб/тренировка</p>
+                        <button class="tinder-button"><img class="tinder-button-img" src="images/plus.png"></button>
+                    </div>
+
+                </div>
+                <div class="swiper-slide">
+                    <div class="tinder-recs recs">
+                        <div class="tinder-info">
+                            <img class="tinder-img" src="images/person6.jpg">
+                            <div>
+                                <h3 class="tinder-info-name">Дмитрий</h3>
+                                <h3 class="tinder-info-age">31 год</h3>
+                            </div>
+                        </div>
+                        <p class="recs-text">Всем привет! Ищу партнера для совместного похода в зал с в 19:00 по
+                            вторникам и субботам. Готов поддерживать и мотивировать, если то же буду получать взамен)
+                            Всем успехов в саморазвитии!</p>
+                        <button class="tinder-button"><img class="tinder-button-img" src="images/plus.png"></button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div id="screen-profile" class="page-div">
+        <h1 class="page-header">Профиль</h1>
+        <img class="profile-photo" src="images/shpak.jpg">
+        <h2 class="profile-name">Денис Шпак</h2>
+        <div class="profile-info">
+            <p>Цели: похудеть на 10кг</p>
+            <p>Мой план трени: тык</p>
+            <p>Мой план питания: тыгыдык</p>
+            <p>Моя активность: 0</p>
+        </div>
+    </div>
     </div>
     <div id="screen-search" class="page-div">
         <h1 class="page-header">Поиск</h1>
@@ -38,10 +155,13 @@
                     <h1 class="recs-header">План питания 1</h1>
                     <div class="recs">
                         <p class="recs-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis
                             nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit
                             anim id est laborum."</p>
                     </div>
                     <button class="recs-button">Добавить</button>
@@ -50,10 +170,13 @@
                     <h1 class="recs-header">План питания 2</h1>
                     <div class="recs">
                         <p class="recs-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis
                             nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit
                             anim id est laborum."</p>
                     </div>
                     <button class="recs-button">Добавить</button>
@@ -62,10 +185,13 @@
                     <h1 class="recs-header">План питания 3</h1>
                     <div class="recs">
                         <p class="recs-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis
                             nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit
                             anim id est laborum."</p>
                     </div>
                     <button class="recs-button">Добавить</button>
@@ -75,95 +201,57 @@
         </div>
     </div>
     <div id="screen-tinder" class="page-div">
-        <h1 class="page-header">Тиндер</h1>
+        <h1 class="page-header">Новости</h1>
         <div class="swiper">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                    <h1 class="recs-header">Денчик ШПак</h1>
-                    <div class="tinder-recs recs">
-                        <div class="tinder-info">
-                            <img class="tinder-img" src="images/person1.jpeg">
-                            <div>
-                                <h3>Ищу: похудение</h3>
-                                <h3>Возраст: 13 лет</h3>
-                                <h3>Пол: мужской</h3>
-                            </div>
-                        </div>
-                        <p class="recs-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                            anim id est laborum."</p>
+                    <div class="news-recs recs">
+                        <img class="news-img" src="images/news1.jpg">
+                        <p class="news-nickname">@dasha1997</p>
                     </div>
-                    <button class="recs-button" onclick="location.href='https://t.me/dsshpak'">Написать</button>
                 </div>
                 <div class="swiper-slide">
-                    <h1 class="recs-header">Пенчик Шменчик</h1>
-                    <div class="tinder-recs recs">
-                        <div class="tinder-info">
-                            <img class="tinder-img" src="images/person2.jpeg">
-                            <div>
-                                <h3>Ищу: похудение</h3>
-                                <h3>Возраст: 43 лет</h3>
-                                <h3>Пол: мужской</h3>
-                            </div>
-                        </div>
-                        <p class="recs-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                            anim id est laborum."</p>
+                    <div class="news-recs recs">
+                        <img class="news-img" src="images/news3.jpg">
+                        <p class="news-nickname">@IVannnn</p>
                     </div>
-                    <button class="recs-button" onclick="location.href='https://t.me/dsshpak'">Написать</button>
                 </div>
                 <div class="swiper-slide">
-                    <h1 class="recs-header">Денчиха Шпаковна</h1>
-                    <div class="tinder-recs recs">
-                        <div class="tinder-info">
-                            <img class="tinder-img" src="images/person3.jpeg">
-                            <div>
-                                <h3>Ищу: похудение</h3>
-                                <h3>Возраст: 30 лет</h3>
-                                <h3>Пол: женский</h3>
-                            </div>
-                        </div>
-                        <p class="recs-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                            anim id est laborum."</p>
+                    <div class="news-recs recs">
+                        <img class="news-img" src="images/news4.jpeg">
+                        <p class="news-nickname">@ippishio</p>
                     </div>
-                    <button class="recs-button" onclick="location.href='https://t.me/dsshpak'">Написать</button>
                 </div>
+                <div class="swiper-slide">
+                    <div class="news-recs recs">
+                        <img class="news-img" src="images/news2.jpg">
+                        <p class="news-nickname">@denisShak</p>
+                    </div>
+                </div>
+
             </div>
         </div>
+    </div>
     </div>
     <div id="screen-profile" class="page-div">
         <h1 class="page-header">Профиль</h1>
         <img class="profile-photo" src="images/shpak.jpg">
-        <h2 class ="profile-name">Денис Шпак</h2>
-        <div class ="profile-info">
+        <h2 class="profile-name">Денис Шпак</h2>
+        <div class="profile-info">
             <p>Цели: похудеть на 10кг</p>
-            <p>Мой план трени: тык</p>
-            <p>Мой план питания: тыгыдык</p>
-            <p>Моя активность: 0</p>
         </div>
     </div>
-
+    </div>
     <div class="navbar">
-        <button id="home" class="navbar-button"><img src="images/home.png" class="button-img" border="0"></button>
+        <button id="home" class="navbar-button"><img src="images/people.png" class="button-img" border="0"></button>
         <button id="search" class="navbar-button"><img src="images/search.png" class="button-img" border="0"></button>
-        <button id="tinder" class="navbar-button"><img src="images/people.png" class="button-img" border="0"></button>
+        <button id="tinder" class="navbar-button"><img src="images/home.png" class="button-img" border="0"></button>
         <button id="profile" class="navbar-button"><img src="images/profile.png" class="button-img" border="0"></button>
 
-    </div>
-    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
-    <script src="main.js"></script>
+        <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+        <script src="main.js"></script>
 </body>
 
 </html>

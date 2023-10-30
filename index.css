@@ -2,12 +2,30 @@
     width: device-width;
     zoom: 1.0;
 }
-html, body {margin: 0; height: 100%; overflow: hidden}
 
+html,
 body {
-    background-color: #b9f0c1;
+
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     font-family: 'Montserrat', sans-serif;
-font-family: 'Nunito', sans-serif;
+    background: url(images/background.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+.swiper-slide {
+    box-sizing: border-box;
+    height: 10%;
 }
 button {
 
@@ -15,52 +33,101 @@ button {
     background-color: inherit;
     border-width: 2px;
 
-  }
-.tinder-img {
-    width: 40%;
-    object-fit: cover;
-    height: 30%;
-
 }
+h2 {
+    color: #420743;
+}
+.tinder-img {
+    margin-top: 5%;
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    border-color: black;
+    border-style: solid;
+    border-radius: 5%;
+    border-width: 2px;
+    float: left;
+}
+
 .profile-photo {
     width: 70%;
-    margin:0 auto;
-    display:block;
+    margin: 0 auto;
+    display: block;
+    border: black;
+    border-style: solid;
+    border-radius: 10px;
 }
+.tinder-button-img{
+    width: 15%;
+}
+.tinder-button {
+    width: 100%;
+}
+.page-header {
+
+    margin-top: 0;
+    margin-left: 2%;
+    font-weight: bold;
+    color: #420743;
+    font-size: 45pt;
+    text-align: left;
+}
+
 .profile-name {
     background-color: white;
     text-align: center;
-    border-width: 2px;
-    border-color: #37ab4c;
-    border-style: solid;
+
     width: 80%;
     margin: 5% auto;
 }
+
 .profile-info {
     margin-left: 5%;
     font-size: 200%;
 }
-.recs {
 
+.recs {
+    border-radius: 10px;
     background-color: white;
-    border-style: solid; 
-    border-width: 2px; 
+    border-style: solid;
+    border-width: 2px;
     border-color: black;
     margin-top: 2%;
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 5%;
 }
-h1 {
-    text-align: center;
-    z-index: -1;
+
+.news-recs {
+    height: 120%;
+}
+
+.news-img {
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 90%;
+    height: 80%;
+    margin-bottom: 5%;
+    background-size: cover;
+    border-color: black;
+    border-style: solid;
+    border-radius: 5%;
+    border-width: 2px;
+    float: left;
+}
+.news-nickname {
+    color: #420743;
+    margin-left: 5%;
+    font-size: 15pt;
+    font-weight: bold;
 }
 .recs-header {
+    border-radius: 10px;
     margin-top: 0;
     margin-bottom: 0;
     background-color: #37ab4c;
-    border-style: solid; 
-    border-width: 2px; 
+    border-style: solid;
+    border-width: 2px;
     border-color: black;
     margin-left: 5%;
     margin-right: 5%;
@@ -68,19 +135,45 @@ h1 {
 
 
 }
+.tinder-buttons {
+    display: flex;
+    flex-direction: row;
+}
+.tinder-button {
+    border-style: none;
+    display: inline-block;
+    margin-top: 5%;
+}
 .tinder-info {
-    display:flex;
-  flex-direction:row;
-  margin-left: 5%;
+    margin-left: 5%;
+}
+.tinder-info-name {
+
+
+    color: #f59f2f;
+}
+.tinder-info-age {
+ 
+
+    color: #04bd04;
+}
+.tinder-recs {
+    border-radius: 10px;
+    height: 100%;
+}
+#person-1 {
+    background: url("images/person1.jpeg") no-repeat center center fixed;
 }
 .recs-text {
+    margin-top: 0;
     margin-left: 5%;
     margin-right: 5%;
     font-size: 100%;
 }
+
 .recs-button {
-    margin:0 auto;
-    display:block;
+    margin: 0 auto;
+    display: block;
     font-size: 300%;
     width: 70%;
     background-color: #f5c856;
@@ -88,34 +181,42 @@ h1 {
     border-radius: 5px;
     border-width: 3px;
 
+
 }
-.page-div{
+
+.page-div {
     position: absolute;
     width: 100%;
     height: 100%;
     visibility: hidden;
 }
+
 .button-img {
     width: 50%;
     margin-top: 10%;
-  }
-.navbar {
-    display:flex;
-  flex-direction:row;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  position: absolute;
-  height: 10%;
 }
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+    height: 8%;
+    z-index: 4;
+}
+
 .navbar-button {
-    border-color: #37ab4c;
-    border-style: solid;
+    z-index: 4;
+
+    border-color: #f59f2f;
+    border-style: none;
     display: inline-block;
-  width: calc(100% / 4);
-  /* height: 30%;
+    width: calc(100% / 4);
+    /* height: 30%;
   line-height: 60px; */
-  background: white;
-  margin: 0 0px;
-  text-align: center;
+    background: white;
+    margin: 0 0px;
+    text-align: center;
 }
