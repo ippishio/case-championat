@@ -1,7 +1,7 @@
 {
-    "name": "GdeTolsty",
-    "short_name": "GDE",
-    "description": "berba smell",
+    "name": "FitMatch",
+    "short_name": "FitMatch",
+    "description": "Sport is our live",
     "icons": [
       {
         "src": "./images/icon-100.png",
